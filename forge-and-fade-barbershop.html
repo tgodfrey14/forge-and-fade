@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Forge & Fade Barbershop | Clapham, London — Book a Cut Today</title>
+<meta name="description" content="Forge & Fade is Clapham's precision barbershop. Skin fades, hot towel shaves & beard sculpting from master barbers. Walk-ins welcome. Call 020 7946 0958 or get a free quote.">
+<meta name="keywords" content="barbershop Clapham, barber London, skin fade, hot towel shave, beard trim, mens haircut Clapham">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.forgeandfadebarbers.co.uk/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="business.business">
+<meta property="og:title" content="Forge & Fade Barbershop | Clapham, London">
+<meta property="og:description" content="Precision fades, straight razor shaves & beard work. Walk-ins welcome, 7 days a week.">
+<meta property="og:locale" content="en_GB">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,900&family=Work+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+
+<!-- Local Business Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HairSalon",
+  "name": "Forge & Fade Barbershop",
+  "image": "https://www.forgeandfadebarbers.co.uk/og-image.jpg",
+  "@id": "https://www.forgeandfadebarbers.co.uk/",
+  "url": "https://www.forgeandfadebarbers.co.uk/",
+  "telephone": "+442079460958",
+  "priceRange": "££",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "14 Abbeville Road",
+    "addressLocality": "Clapham",
+    "addressRegion": "London",
+    "postalCode": "SW4 9NG",
+    "addressCountry": "GB"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 51.4613,
+    "longitude": -0.1367
+  },
+  "openingHoursSpecification": [
+    {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"09:00","closes":"19:00"},
+    {"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"08:30","closes":"18:00"},
+    {"@type":"OpeningHoursSpecification","dayOfWeek":"Sunday","opens":"10:00","closes":"16:00"}
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "512"
+  }
+}
+</script>
+
+<style>
+:root{
+  --ink:#1b1b1a;
+  --ivory:#efe9dd;
+  --ivory-soft:#f6f2e9;
+  --green:#24402f;
+  --green-deep:#152920;
+  --brass:#a9853c;
+  --brass-light:#c9a961;
+  --red:#8b2e28;
+  --white:#ffffff;
+  --line: rgba(27,27,26,0.12);
+  --shadow: 0 12px 30px rgba(21,41,32,0.16);
+  --radius: 4px;
+  --disp: "Fraunces", serif;
+  --body: "Work Sans", sans-serif;
+  --mono: "IBM Plex Mono", monospace;
+  --maxw: 1180px;
+}
+
+*{box-sizing:border-box; margin:0; padding:0;}
+html{scroll-behavior:smooth;}
+@media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto;} *{animation-duration:0.001ms !important; transition-duration:0.001ms !important;} }
+
+body{
+  font-family:var(--body);
+  color:var(--ink);
+  background:var(--ivory);
+  line-height:1.55;
+  -webkit-font-smoothing:antialiased;
+}
+
+img{max-width:100%; display:block;}
+a{color:inherit; text-decoration:none;}
+ul{list-style:none;}
+button{font-family:inherit; cursor:pointer;}
+h1,h2,h3{font-family:var(--disp); font-weight:700; line-height:1.08; letter-spacing:-0.01em;}
+.container{max-width:var(--maxw); margin:0 auto; padding:0 20px;}
+:focus-visible{outline:3px solid var(--brass); outline-offset:3px;}
+
+.eyebrow{
+  font-family:var(--mono);
+  font-size:0.72rem;
+  letter-spacing:0.14em;
+  text-transform:uppercase;
+  color:var(--brass);
+  font-weight:600;
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+}
+.eyebrow::before{content:""; width:22px; height:2px; background:var(--brass); display:inline-block;}
+
+/* ---------- Stripe divider (signature element: barber-pole reference) ---------- */
+.pole-stripe{
+  height:10px;
+  background:repeating-linear-gradient(
+    -45deg,
+    var(--red) 0 14px,
+    var(--ivory) 14px 28px,
+    var(--green) 28px 42px,
+    var(--ivory) 42px 56px
+  );
+}
+
+/* ---------- Buttons ---------- */
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:9px;
+  padding:15px 26px;
+  font-family:var(--body);
+  font-weight:600;
+  font-size:0.98rem;
+  border-radius:var(--radius);
+  border:2px solid transparent;
+  white-space:nowrap;
+  transition:transform .15s ease, box-shadow .15s ease, background .15s ease;
+}
+.btn:active{transform:translateY(1px);}
+.btn-primary{ background:var(--red); color:var(--ivory-soft); box-shadow:0 8px 18px rgba(139,46,40,0.35); }
+.btn-primary:hover{ background:#a13a32; }
+.btn-outline{ background:transparent; border-color:var(--ivory-soft); color:var(--ivory-soft); }
+.btn-outline:hover{ background:rgba(239,233,221,0.12); }
+.btn-outline-dark{ background:transparent; border-color:var(--ink); color:var(--ink); }
+.btn-outline-dark:hover{ background:rgba(27,27,26,0.06); }
+.btn-brass{ background:var(--brass); color:var(--green-deep); }
+.btn-brass:hover{ background:var(--brass-light); }
+.btn-block{ width:100%; }
+
+/* ---------- Header ---------- */
+.site-header{
+  position:sticky; top:0; z-index:100;
+  background:var(--green-deep);
+  border-bottom:1px solid rgba(239,233,221,0.14);
+}
+.header-inner{
+  display:flex; align-items:center; justify-content:space-between;
+  padding:14px 20px;
+  max-width:var(--maxw); margin:0 auto;
+}
+.logo{
+  font-family:var(--disp); font-weight:700; font-size:1.35rem; color:var(--ivory-soft);
+  display:flex; align-items:baseline; gap:6px;
+}
+.logo span{ color:var(--brass-light); }
+.header-call{
+  display:flex; align-items:center; gap:8px;
+  font-family:var(--mono); font-weight:600; font-size:0.95rem;
+  color:var(--ivory-soft);
+  border:1.5px solid rgba(239,233,221,0.35);
+  padding:9px 14px; border-radius:999px;
+}
+.header-call svg{ width:16px; height:16px; fill:var(--brass-light); flex-shrink:0; }
+nav.main-nav{ display:none; }
+.menu-toggle{
+  background:none; border:1px solid rgba(239,233,221,0.35); border-radius:6px;
+  width:40px; height:40px; display:none;
+  align-items:center; justify-content:center;
+}
+
+@media (min-width:900px){
+  .header-inner{ padding:16px 20px; }
+  nav.main-nav{
+    display:flex; gap:28px; font-size:0.92rem; font-weight:500; color:var(--ivory-soft);
+  }
+  nav.main-nav a{ opacity:0.85; transition:opacity .15s; padding:6px 2px; border-bottom:2px solid transparent;}
+  nav.main-nav a:hover{ opacity:1; border-color:var(--brass-light); }
+  .header-actions{ display:flex; align-items:center; gap:14px; }
+}
+@media (max-width:899.98px){
+  .header-actions{ display:flex; align-items:center; gap:10px; }
+  .header-call span.call-label{ display:none; }
+}
+
+/* ---------- Hero ---------- */
+.hero{
+  background:
+    radial-gradient(ellipse at top right, rgba(169,133,60,0.18), transparent 55%),
+    linear-gradient(180deg, var(--green-deep) 0%, var(--green) 100%);
+  color:var(--ivory-soft);
+  padding:52px 0 60px;
+  position:relative;
+  overflow:hidden;
+}
+.hero::after{
+  content:"";
+  position:absolute; right:-80px; top:-80px; width:340px; height:340px;
+  border:1px solid rgba(239,233,221,0.12); border-radius:50%;
+}
+.hero-inner{ position:relative; z-index:1; max-width:720px; }
+.hero h1{
+  font-size:clamp(2.1rem, 6vw, 3.4rem);
+  margin:16px 0 18px;
+}
+.hero h1 em{ font-style:italic; color:var(--brass-light); }
+.hero p.lede{
+  font-size:1.08rem; max-width:52ch; color:rgba(239,233,221,0.86); margin-bottom:30px;
+}
+.hero-ctas{ display:flex; flex-wrap:wrap; gap:14px; margin-bottom:34px; }
+.trust-row{
+  display:flex; flex-wrap:wrap; gap:22px; align-items:center;
+  font-family:var(--mono); font-size:0.82rem; color:rgba(239,233,221,0.8);
+  padding-top:26px; border-top:1px solid rgba(239,233,221,0.16);
+}
+.trust-row .stars{ color:var(--brass-light); letter-spacing:1px; }
+.trust-row strong{ color:var(--ivory-soft); }
+
+/* ---------- Section shells ---------- */
+section{ padding:64px 0; }
+.section-head{ max-width:640px; margin-bottom:40px; }
+.section-head h2{ font-size:clamp(1.7rem,4.2vw,2.4rem); margin-top:12px; }
+.section-head p{ margin-top:14px; color:rgba(27,27,26,0.72); font-size:1.02rem; }
+.section-dark{ background:var(--ink); color:var(--ivory-soft); }
+.section-dark .section-head p{ color:rgba(239,233,221,0.72); }
+
+/* ---------- Services (ticket cards) ---------- */
+.services-grid{
+  display:grid; grid-template-columns:1fr; gap:18px;
+}
+@media (min-width:640px){ .services-grid{ grid-template-columns:1fr 1fr; } }
+@media (min-width:1000px){ .services-grid{ grid-template-columns:repeat(4,1fr); } }
+
+.ticket{
+  background:var(--white);
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  padding:26px 22px 22px;
+  position:relative;
+  box-shadow:0 4px 14px rgba(27,27,26,0.05);
+  background-image: radial-gradient(circle at 0 50%, var(--ivory) 8px, transparent 8.5px), radial-gradient(circle at 100% 50%, var(--ivory) 8px, transparent 8.5px);
+  background-position: left 88px, right 88px;
+  background-repeat:no-repeat;
+}
+.ticket::before{
+  content:"";
+  position:absolute; left:14px; right:14px; top:92px;
+  border-top:1.5px dashed rgba(27,27,26,0.18);
+}
+.ticket h3{ font-size:1.15rem; margin-bottom:4px; }
+.ticket .desc{ font-size:0.88rem; color:rgba(27,27,26,0.62); min-height:36px; }
+.ticket .price{
+  font-family:var(--mono); font-weight:600; font-size:1.7rem; color:var(--green);
+  margin-top:26px;
+}
+.ticket .price sup{ font-size:0.9rem; top:-0.6em; }
+.ticket .duration{ font-family:var(--mono); font-size:0.75rem; color:var(--brass); margin-top:4px; text-transform:uppercase; letter-spacing:0.06em; }
+
+/* ---------- Why us ---------- */
+.features-grid{
+  display:grid; grid-template-columns:1fr; gap:28px;
+}
+@media (min-width:700px){ .features-grid{ grid-template-columns:1fr 1fr; } }
+.feature{ display:flex; gap:16px; }
+.feature-icon{
+  flex-shrink:0; width:48px; height:48px; border-radius:50%;
+  background:rgba(169,133,60,0.14);
+  display:flex; align-items:center; justify-content:center;
+}
+.feature-icon svg{ width:23px; height:23px; fill:var(--brass-light); }
+.feature h3{ font-size:1.08rem; margin-bottom:6px; font-family:var(--body); font-weight:600; }
+.feature p{ font-size:0.92rem; color:rgba(239,233,221,0.7); }
+
+/* ---------- Craft / tools strip ---------- */
+.craft-grid{
+  display:grid; grid-template-columns:repeat(2,1fr); gap:16px;
+}
+@media (min-width:700px){ .craft-grid{ grid-template-columns:repeat(4,1fr); } }
+.craft-card{
+  background:var(--ivory-soft); border:1px solid var(--line); border-radius:var(--radius);
+  padding:22px 16px; text-align:center;
+}
+.craft-card svg{ width:34px; height:34px; fill:var(--green); margin:0 auto 12px; }
+.craft-card h3{ font-size:0.95rem; font-weight:600; font-family:var(--body); margin-bottom:4px; }
+.craft-card p{ font-size:0.8rem; color:rgba(27,27,26,0.6); }
+
+/* ---------- Testimonials ---------- */
+.testi-grid{ display:grid; grid-template-columns:1fr; gap:20px; }
+@media (min-width:800px){ .testi-grid{ grid-template-columns:repeat(3,1fr); } }
+.testi-card{
+  background:var(--white); border:1px solid var(--line); border-radius:var(--radius);
+  padding:24px; box-shadow:0 4px 14px rgba(27,27,26,0.05);
+}
+.testi-card .stars{ color:var(--brass); letter-spacing:2px; font-size:0.9rem; margin-bottom:12px; }
+.testi-card p.quote{ font-size:0.95rem; color:rgba(27,27,26,0.82); margin-bottom:16px; }
+.testi-card .who{ font-family:var(--mono); font-size:0.78rem; color:rgba(27,27,26,0.55); }
+
+/* ---------- Contact / Quote ---------- */
+.contact-wrap{
+  display:grid; grid-template-columns:1fr; gap:36px;
+}
+@media (min-width:960px){ .contact-wrap{ grid-template-columns:0.85fr 1.15fr; align-items:start; } }
+
+.contact-card{
+  background:var(--green-deep); color:var(--ivory-soft);
+  border-radius:var(--radius); padding:32px 28px;
+}
+.contact-card h3{ font-family:var(--disp); font-size:1.4rem; margin-bottom:18px; }
+.contact-line{
+  display:flex; gap:12px; align-items:flex-start; margin-bottom:18px; font-size:0.94rem;
+}
+.contact-line svg{ width:18px; height:18px; fill:var(--brass-light); flex-shrink:0; margin-top:3px; }
+.contact-line a{ color:var(--ivory-soft); }
+.contact-line .big-phone{ font-family:var(--mono); font-size:1.3rem; font-weight:600; }
+.hours-table{ width:100%; margin-top:10px; font-size:0.88rem; }
+.hours-table tr{ border-bottom:1px solid rgba(239,233,221,0.12); }
+.hours-table td{ padding:7px 0; }
+.hours-table td:last-child{ text-align:right; font-family:var(--mono); color:var(--brass-light); }
+
+.form-card{
+  background:var(--white); border:1px solid var(--line); border-radius:var(--radius);
+  padding:30px 26px; box-shadow:var(--shadow);
+}
+.form-card h3{ font-size:1.35rem; margin-bottom:6px; }
+.form-card .sub{ font-size:0.9rem; color:rgba(27,27,26,0.6); margin-bottom:24px; }
+.form-row{ display:grid; grid-template-columns:1fr; gap:16px; margin-bottom:16px; }
+@media (min-width:560px){ .form-row.two{ grid-template-columns:1fr 1fr; } }
+.field label{
+  display:block; font-size:0.8rem; font-weight:600; margin-bottom:6px; color:var(--ink);
+}
+.field input, .field select, .field textarea{
+  width:100%; padding:12px 13px; font-family:var(--body); font-size:0.96rem;
+  border:1.5px solid rgba(27,27,26,0.18); border-radius:var(--radius); background:var(--ivory-soft);
+  color:var(--ink);
+}
+.field input:focus, .field select:focus, .field textarea:focus{ border-color:var(--green); background:var(--white); }
+.field textarea{ resize:vertical; min-height:96px; }
+.form-note{ font-size:0.78rem; color:rgba(27,27,26,0.5); margin-top:12px; }
+.form-success{
+  display:none; background:rgba(36,64,47,0.08); border:1.5px solid var(--green);
+  color:var(--green); padding:16px 18px; border-radius:var(--radius); font-size:0.92rem; margin-bottom:16px;
+}
+.form-success.show{ display:block; }
+
+/* ---------- FAQ ---------- */
+.faq-list{ max-width:760px; }
+.faq-item{ border-bottom:1px solid var(--line); }
+.faq-q{
+  width:100%; background:none; border:none; text-align:left;
+  display:flex; justify-content:space-between; align-items:center; gap:16px;
+  padding:20px 0; font-family:var(--body); font-weight:600; font-size:1rem; color:var(--ink);
+}
+.faq-q .plus{ font-family:var(--mono); font-size:1.3rem; color:var(--brass); flex-shrink:0; transition:transform .2s; }
+.faq-item.open .plus{ transform:rotate(45deg); }
+.faq-a{
+  max-height:0; overflow:hidden; transition:max-height .25s ease;
+  font-size:0.94rem; color:rgba(27,27,26,0.68);
+}
+.faq-a-inner{ padding-bottom:20px; max-width:60ch; }
+.faq-item.open .faq-a{ max-height:220px; }
+
+/* ---------- Map/Service area ---------- */
+.area-wrap{ display:grid; grid-template-columns:1fr; gap:28px; }
+@media (min-width:900px){ .area-wrap{ grid-template-columns:1.1fr 0.9fr; align-items:center; } }
+.map-frame{
+  border-radius:var(--radius); overflow:hidden; border:1px solid var(--line);
+  aspect-ratio:16/10; background:
+    linear-gradient(135deg, var(--ivory-soft) 25%, transparent 25%) -8px 0/16px 16px,
+    linear-gradient(225deg, var(--ivory-soft) 25%, transparent 25%) -8px 0/16px 16px,
+    linear-gradient(315deg, var(--ivory-soft) 25%, transparent 25%) 0 0/16px 16px,
+    linear-gradient(45deg, var(--ivory-soft) 25%, var(--ivory) 25%) 0 0/16px 16px;
+  position:relative;
+}
+.map-frame .pin{
+  position:absolute; top:50%; left:50%; transform:translate(-50%,-100%);
+  width:38px; height:38px; fill:var(--red);
+  filter:drop-shadow(0 6px 8px rgba(0,0,0,0.25));
+}
+.area-chips{ display:flex; flex-wrap:wrap; gap:10px; margin-top:18px; }
+.area-chip{
+  font-family:var(--mono); font-size:0.78rem; padding:7px 13px;
+  border:1.5px solid var(--line); border-radius:999px; color:rgba(27,27,26,0.7);
+}
+
+/* ---------- Footer ---------- */
+footer{ background:var(--ink); color:rgba(239,233,221,0.65); padding:48px 0 110px; }
+.footer-grid{ display:grid; grid-template-columns:1fr; gap:32px; }
+@media (min-width:800px){ .footer-grid{ grid-template-columns:1.3fr 1fr 1fr; } footer{ padding-bottom:48px; } }
+.footer-grid h4{ color:var(--ivory-soft); font-family:var(--body); font-size:0.85rem; letter-spacing:0.08em; text-transform:uppercase; margin-bottom:14px; }
+.footer-grid a{ display:block; font-size:0.88rem; padding:5px 0; color:rgba(239,233,221,0.65); }
+.footer-grid a:hover{ color:var(--brass-light); }
+.footer-bottom{
+  max-width:var(--maxw); margin:36px auto 0; padding:20px 20px 0; border-top:1px solid rgba(239,233,221,0.1);
+  font-size:0.78rem; display:flex; flex-wrap:wrap; justify-content:space-between; gap:10px;
+}
+
+/* ---------- Sticky mobile CTA bar ---------- */
+.mobile-cta-bar{
+  position:fixed; bottom:0; left:0; right:0; z-index:200;
+  display:flex; gap:10px; padding:10px 14px;
+  background:var(--white); border-top:1px solid var(--line);
+  box-shadow:0 -6px 18px rgba(0,0,0,0.08);
+}
+.mobile-cta-bar .btn{ flex:1; padding:13px 10px; font-size:0.92rem; }
+@media (min-width:800px){ .mobile-cta-bar{ display:none; } }
+
+/* skip link */
+.skip-link{
+  position:absolute; left:-999px; top:auto;
+  background:var(--brass); color:var(--ink); padding:10px 16px; z-index:1000;
+}
+.skip-link:focus{ left:16px; top:16px; }
+
+.visually-hidden{ position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); }
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<!-- ================= HEADER ================= -->
+<header class="site-header">
+  <div class="header-inner">
+    <a href="#top" class="logo">Forge <span>&</span> Fade</a>
+    <nav class="main-nav" aria-label="Primary">
+      <a href="#services">Services</a>
+      <a href="#craft">The Shop</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <a class="header-call" href="tel:+442079460958" aria-label="Call Forge and Fade Barbershop">
+        <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.5.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C11 21 3 13 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.5.1.4 0 .8-.3 1.1l-2.2 2.2z"/></svg>
+        <span class="call-label">020 7946 0958</span>
+      </a>
+      <a href="#contact" class="btn btn-brass" style="display:none;" id="headerQuoteBtn">Get Quote</a>
+    </div>
+  </div>
+</header>
+<div class="pole-stripe" aria-hidden="true"></div>
+
+<main id="main">
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="top">
+  <div class="container hero-inner">
+    <p class="eyebrow">Clapham, London &middot; Est. 2010</p>
+    <h1>Sharp fades, hot towel shaves, <em>zero attitude.</em></h1>
+    <p class="lede">Forge & Fade is the barbershop Clapham trusts for precision cuts and old-school grooming. Walk in or book ahead — either way, you're in the chair fast.</p>
+    <div class="hero-ctas">
+      <a href="tel:+442079460958" class="btn btn-primary">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.5.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C11 21 3 13 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.5.1.4 0 .8-.3 1.1l-2.2 2.2z"/></svg>
+        Call 020 7946 0958
+      </a>
+      <a href="#contact" class="btn btn-outline">Get a Free Quote</a>
+    </div>
+    <div class="trust-row">
+      <span class="stars">★★★★★</span>
+      <span><strong>4.9</strong> on Google &middot; 512 reviews</span>
+      <span>&middot;</span>
+      <span>Walk-ins welcome, 7 days</span>
+      <span>&middot;</span>
+      <span>Free parking on Abbeville Rd</span>
+    </div>
+  </div>
+</section>
+
+<div class="pole-stripe" aria-hidden="true"></div>
+
+<!-- ================= SERVICES ================= -->
+<section id="services">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Services & Pricing</p>
+      <h2>Every ticket, one straight price.</h2>
+      <p>No upsells at the chair. Pick a service, know the price before you sit down.</p>
+    </div>
+    <div class="services-grid">
+
+      <div class="ticket">
+        <h3>Skin Fade & Style</h3>
+        <p class="desc">Precision fade, tailored to your hair type, finished with a style of your choice.</p>
+        <div class="price">£<span>22</span></div>
+        <div class="duration">35 minutes</div>
+      </div>
+
+      <div class="ticket">
+        <h3>Beard Sculpt</h3>
+        <p class="desc">Shape, line-up and hot towel finish for a defined, healthy beard.</p>
+        <div class="price">£<span>14</span></div>
+        <div class="duration">20 minutes</div>
+      </div>
+
+      <div class="ticket">
+        <h3>Hot Towel Shave</h3>
+        <p class="desc">Traditional straight razor shave with pre-shave oil and hot towel prep.</p>
+        <div class="price">£<span>26</span></div>
+        <div class="duration">30 minutes</div>
+      </div>
+
+      <div class="ticket">
+        <h3>The Full Groom</h3>
+        <p class="desc">Fade, beard sculpt and hot towel shave — our most booked combo.</p>
+        <div class="price">£<span>42</span></div>
+        <div class="duration">65 minutes</div>
+      </div>
+
+      <div class="ticket">
+        <h3>Kids Cut (Under 12)</h3>
+        <p class="desc">Patient, quick cuts for younger clients. Sweets included, tears optional.</p>
+        <div class="price">£<span>14</span></div>
+        <div class="duration">25 minutes</div>
+      </div>
+
+      <div class="ticket">
+        <h3>Skin Fade + Beard</h3>
+        <p class="desc">Our second most popular combo — fade and beard sculpt together.</p>
+        <div class="price">£<span>32</span></div>
+        <div class="duration">50 minutes</div>
+      </div>
+
+      <div class="ticket">
+        <h3>Grey Blending</h3>
+        <p class="desc">Natural-looking grey coverage using ammonia-free colour.</p>
+        <div class="price">£<span>18</span></div>
+        <div class="duration">20 minutes</div>
+      </div>
+
+      <div class="ticket">
+        <h3>Buzz Cut</h3>
+        <p class="desc">Clean, all-over clipper cut. Quick, sharp, no fuss.</p>
+        <div class="price">£<span>15</span></div>
+        <div class="duration">15 minutes</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= WHY US (dark) ================= -->
+<section class="section-dark">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow" style="color:var(--brass-light);">Why Clapham Chooses Us</p>
+      <h2>Old-school craft. No-nonsense service.</h2>
+    </div>
+    <div class="features-grid">
+
+      <div class="feature">
+        <div class="feature-icon"><svg viewBox="0 0 24 24"><path d="M12 2 2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
+        <div>
+          <h3>Master Barbers Only</h3>
+          <p>Every chair is run by a barber with 8+ years' experience — no trainees practising on you.</p>
+        </div>
+      </div>
+
+      <div class="feature">
+        <div class="feature-icon"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm1 5v5.4l4 2.4-.8 1.3L11 13V7z"/></svg></div>
+        <div>
+          <h3>No Appointment Needed</h3>
+          <p>Walk in any day of the week. Prefer to plan ahead? Call and we'll pencil you in.</p>
+        </div>
+      </div>
+
+      <div class="feature">
+        <div class="feature-icon"><svg viewBox="0 0 24 24"><path d="M12 2C7 2 4 5.5 4 10c0 4 2.5 6.5 4 8.5.7.9 1 1.8 1 2.5h6c0-.7.3-1.6 1-2.5 1.5-2 4-4.5 4-8.5 0-4.5-3-8-8-8z"/></svg></div>
+        <div>
+          <h3>Hot Towel on Every Visit</h3>
+          <p>Even a basic cut ends with a hot towel finish and neck shave, on the house.</p>
+        </div>
+      </div>
+
+      <div class="feature">
+        <div class="feature-icon"><svg viewBox="0 0 24 24"><path d="M9 11H3v2h6l-2 2 1.4 1.4L12 12l-3.6-4.4L7 9zM21 11h-6l2-2-1.4-1.4L12 12l3.6 4.4L17 15l-2-2h6z"/></svg></div>
+        <div>
+          <h3>15-Minute Wait Guarantee</h3>
+          <p>Busy shop, tight scheduling. If you're waiting past 15 minutes, your next visit is discounted.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="pole-stripe" aria-hidden="true"></div>
+
+<!-- ================= THE CRAFT ================= -->
+<section id="craft">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">The Shop</p>
+      <h2>Four chairs. One standard.</h2>
+      <p>A working barbershop on Abbeville Road — proper tools, sharpened blades, and a clean line every time.</p>
+    </div>
+    <div class="craft-grid">
+
+      <div class="craft-card">
+        <svg viewBox="0 0 24 24"><path d="M6.3 12.7 1 18l2 2 5.3-5.3-2-2zM20.7 3.3c-.4-.4-1-.4-1.4 0L14 8.6l1.4 1.4 5.3-5.3c.4-.4.4-1 0-1.4zM12.6 10 14 11.4l-8.3 8.3c-.4.4-1 .4-1.4 0l-1-1c-.4-.4-.4-1 0-1.4L12.6 10z"/></svg>
+        <h3>Straight Razors</h3>
+        <p>Stropped and honed daily for a genuinely close shave.</p>
+      </div>
+
+      <div class="craft-card">
+        <svg viewBox="0 0 24 24"><path d="M2 12c0-1.5 6-2 10-2s10 .5 10 2-6 2-10 2-10-.5-10-2z"/></svg>
+        <h3>German Steel Combs</h3>
+        <p>Anti-static combs that don't snag or pull on the way through.</p>
+      </div>
+
+      <div class="craft-card">
+        <svg viewBox="0 0 24 24"><path d="M4 4h16v3H4zM6 9h12v11H6z"/></svg>
+        <h3>Hot Towel Station</h3>
+        <p>Steamed towels ready before you even sit down.</p>
+      </div>
+
+      <div class="craft-card">
+        <svg viewBox="0 0 24 24"><path d="M12 2 4 6v6c0 5 3.4 9 8 10 4.6-1 8-5 8-10V6l-8-4z"/></svg>
+        <h3>Sanitised Between Every Client</h3>
+        <p>Hospital-grade sanitiser on every tool, every chair, every time.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= TESTIMONIALS ================= -->
+<section id="reviews" style="background:var(--ivory-soft);">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">512 Google Reviews</p>
+      <h2>What Clapham's saying.</h2>
+    </div>
+    <div class="testi-grid">
+
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <p class="quote">Been going here for two years and never had a bad cut. They actually listen to what you want instead of doing their own thing.</p>
+        <div class="who">— Daniel R., Clapham</div>
+      </div>
+
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <p class="quote">Walked in on a Saturday expecting a long wait and was in the chair within ten minutes. Hot towel shave was worth it alone.</p>
+        <div class="who">— Marcus O., Balham</div>
+      </div>
+
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <p class="quote">Took my son for his first proper haircut, the barber was so patient with him. We're regulars now.</p>
+        <div class="who">— Priya S., Clapham</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="pole-stripe" aria-hidden="true"></div>
+
+<!-- ================= SERVICE AREA ================= -->
+<section>
+  <div class="container area-wrap">
+    <div>
+      <p class="eyebrow">Find Us</p>
+      <h2 style="font-size:clamp(1.5rem,3.6vw,2rem); margin:12px 0 14px;">14 Abbeville Road, Clapham, London SW4 9NG</h2>
+      <p style="color:rgba(27,27,26,0.7); margin-bottom:6px;">Two minutes' walk from Clapham South station. Street parking available after 6:30pm.</p>
+      <p style="color:rgba(27,27,26,0.7);">Proudly cutting hair for:</p>
+      <div class="area-chips">
+        <span class="area-chip">Clapham</span>
+        <span class="area-chip">Balham</span>
+        <span class="area-chip">Battersea</span>
+        <span class="area-chip">Tooting</span>
+        <span class="area-chip">Wandsworth</span>
+        <span class="area-chip">Brixton</span>
+      </div>
+    </div>
+    <div class="map-frame" role="img" aria-label="Map showing Forge and Fade Barbershop location on Abbeville Road, Clapham">
+      <svg class="pin" viewBox="0 0 24 24"><path d="M12 2C7.6 2 4 5.6 4 10c0 6 8 12 8 12s8-6 8-12c0-4.4-3.6-8-8-8zm0 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/></svg>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section id="faq" style="background:var(--ivory-soft);">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Good to Know</p>
+      <h2>Frequently asked questions.</h2>
+    </div>
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Do I need to book an appointment? <span class="plus">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner">No — we take walk-ins every day. If you'd rather guarantee a time slot, give us a call and we'll book you in.</div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">What are your busiest times? <span class="plus">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner">Saturday mornings and weekday evenings after 5pm. Tuesday and Wednesday afternoons are usually the quietest if you want to skip the queue.</div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Do you cut children's hair? <span class="plus">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner">Yes, for children under 12. We keep a steady hand and a bit of patience for the wriggly ones.</div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Is there parking nearby? <span class="plus">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner">Free street parking on Abbeville Road after 6:30pm and on Sundays. Clapham South station car park is a two-minute walk otherwise.</div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Do you take card payments? <span class="plus">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner">Yes — we take card, contactless and cash. No booking fees or deposits for walk-ins.</div></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT / QUOTE FORM ================= -->
+<section id="contact">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Get In Touch</p>
+      <h2>Book a slot or ask us anything.</h2>
+      <p>Fastest way to reach us is a phone call — but if you'd rather, fill in the form and we'll get back to you the same day.</p>
+    </div>
+
+    <div class="contact-wrap">
+      <div class="contact-card">
+        <h3>Forge & Fade Barbershop</h3>
+
+        <div class="contact-line">
+          <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.5.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C11 21 3 13 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.5.1.4 0 .8-.3 1.1l-2.2 2.2z"/></svg>
+          <div>
+            <a href="tel:+442079460958" class="big-phone">020 7946 0958</a><br>
+            <span style="opacity:0.7; font-size:0.85rem;">Tap to call — we usually pick up within 3 rings</span>
+          </div>
+        </div>
+
+        <div class="contact-line">
+          <svg viewBox="0 0 24 24"><path d="M12 2C7.6 2 4 5.6 4 10c0 6 8 12 8 12s8-6 8-12c0-4.4-3.6-8-8-8zm0 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/></svg>
+          <div>14 Abbeville Road<br>Clapham, London SW4 9NG</div>
+        </div>
+
+        <div class="contact-line">
+          <svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5z"/></svg>
+          <div><a href="mailto:hello@forgeandfadebarbers.co.uk">hello@forgeandfadebarbers.co.uk</a></div>
+        </div>
+
+        <table class="hours-table">
+          <tr><td>Mon – Fri</td><td>9:00 – 19:00</td></tr>
+          <tr><td>Saturday</td><td>8:30 – 18:00</td></tr>
+          <tr><td>Sunday</td><td>10:00 – 16:00</td></tr>
+        </table>
+      </div>
+
+      <div class="form-card">
+        <h3>Get a Free Quote</h3>
+        <p class="sub">Tell us what you need and we'll confirm pricing and the next available slot.</p>
+
+        <div class="form-success" id="formSuccess">Thanks — your request is in. We'll call or email you back within a few hours during opening times.</div>
+
+        <form id="quoteForm" novalidate>
+          <div class="form-row two">
+            <div class="field">
+              <label for="name">Full name</label>
+              <input type="text" id="name" name="name" required autocomplete="name">
+            </div>
+            <div class="field">
+              <label for="phone">Phone number</label>
+              <input type="tel" id="phone" name="phone" required autocomplete="tel" placeholder="07xxx xxx xxx">
+            </div>
+          </div>
+
+          <div class="form-row two">
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" autocomplete="email">
+            </div>
+            <div class="field">
+              <label for="service">Service interested in</label>
+              <select id="service" name="service">
+                <option>Skin Fade & Style</option>
+                <option>Beard Sculpt</option>
+                <option>Hot Towel Shave</option>
+                <option>The Full Groom</option>
+                <option>Kids Cut</option>
+                <option>Not sure yet</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="field">
+              <label for="message">Anything else we should know?</label>
+              <textarea id="message" name="message" placeholder="Preferred day/time, first visit, etc."></textarea>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block">Send My Request</button>
+          <p class="form-note">By submitting, you agree to be contacted by phone, SMS or email about your enquiry.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="container footer-grid">
+    <div>
+      <div class="logo" style="margin-bottom:10px;">Forge <span>&</span> Fade</div>
+      <p style="font-size:0.88rem; max-width:36ch; color:rgba(239,233,221,0.55);">Clapham's precision barbershop since 2010. Skin fades, straight razor shaves and beard work, done properly.</p>
+    </div>
+    <div>
+      <h4>Explore</h4>
+      <a href="#services">Services & Pricing</a>
+      <a href="#craft">The Shop</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#faq">FAQ</a>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <a href="tel:+442079460958">020 7946 0958</a>
+      <a href="mailto:hello@forgeandfadebarbers.co.uk">hello@forgeandfadebarbers.co.uk</a>
+      <a href="#contact">14 Abbeville Road, Clapham SW4 9NG</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Forge & Fade Barbershop. All rights reserved.</span>
+    <span>Site built by [Your Web Design Business]</span>
+  </div>
+</footer>
+
+<!-- ================= MOBILE STICKY CTA ================= -->
+<div class="mobile-cta-bar" aria-label="Quick actions">
+  <a href="tel:+442079460958" class="btn btn-primary">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.5.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C11 21 3 13 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.5.1.4 0 .8-.3 1.1l-2.2 2.2z"/></svg>
+    Call Now
+  </a>
+  <a href="#contact" class="btn btn-outline-dark">Get Quote</a>
+</div>
+
+<script>
+// FAQ accordion
+document.querySelectorAll('.faq-q').forEach(function(btn){
+  btn.addEventListener('click', function(){
+    var item = btn.closest('.faq-item');
+    var isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(function(el){
+      if(el !== item){ el.classList.remove('open'); el.querySelector('.faq-q').setAttribute('aria-expanded','false'); }
+    });
+    item.classList.toggle('open', !isOpen);
+    btn.setAttribute('aria-expanded', String(!isOpen));
+  });
+});
+
+// Quote form handling (front-end demo — wire to backend/email service in production)
+var form = document.getElementById('quoteForm');
+var success = document.getElementById('formSuccess');
+form.addEventListener('submit', function(e){
+  e.preventDefault();
+  if(!form.checkValidity()){
+    form.reportValidity();
+    return;
+  }
+  success.classList.add('show');
+  success.scrollIntoView({behavior:'smooth', block:'center'});
+  form.reset();
+});
+</script>
+
+</body>
+</html>
